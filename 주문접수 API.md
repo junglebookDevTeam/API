@@ -1,9 +1,9 @@
 # 주문접수 API
 
 ## Request (POST) ##
-<p>주문 요청 URL: http://api.petsdesign.co.kr/order</p>
-<p>테스트 주문 요청URL: http://api.petsdesign.co.kr/order/test</p>
-<p>Require header: pd_key (해당키는 펫츠디자인 개발팀에 발급요청 하시기바랍니다. dev@petsdesign.co.kr)</p>
+<p>주문 요청 URL: http://api.junglebook.co.kr/order</p>
+<p>테스트 주문 요청URL: http://api.junglebook.co.kr/order/test</p>
+<p>Require header: pd_key (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 ## Response parameters ##
 
@@ -20,7 +20,7 @@
 	"oaOrderNo": "123456", //[default: null, string]
 	//제휴처 주문번호: null 인경우 자동으로 생성되며, 중복주문 확인 또는 주문조회시 사용 됩니다.
 	
-	"nameReceiver": "펫츠디자인", //[Required, string]
+	"nameReceiver": "정글북", //[Required, string]
 	//수령자: 2글자 이상의 수령자 이름
 	
 	"phoneReceiver": "010-1234-5678", //[Required, string]
@@ -35,14 +35,14 @@
 	"address": "경기도 화성시 팔탄면 버들로 1362번길 10-12", //[Required, string]
 	//(지번/도로명)주소: 주소정재 API를 이용하기 때문에 가급적 신주소로 요청하시기 바랍니다.
 	
-	"address2": "펫츠디자인", //[Required, string]
+	"address2": "정글북", //[Required, string]
 	//나머지 주소: 아파트명, 동, 호수 등 나머지 주소
 	
 	"settleKind": "a", //[default: "a", string]
 	//결제방식: "a" => (무통장), "s" => (캐쉬결제)
 	//무통장 결제인 경우, 주문접수만 처리 하고 캐쉬결제인 경우 주문접수후 캐쉬결제까지 처리합니다.
 	
-	"bankSender": "펫투비", //[Conditional Required, string]
+	"bankSender": "정글북", //[Conditional Required, string]
 	//입금자명: settleKind 파라미터가 "a" (무통장)인경우 필수
 	
 	"doubleCheck": "1", //[Required, int]
@@ -56,7 +56,7 @@
 	// 주문상품 정보
 		{
 			"goodsNo": 7373, //[Required, int]
-			//주문 상품번호: 펫투비 상품번호
+			//주문 상품번호: 정글북 상품번호
 			
 			"ea": 1 //[Required, int]
 			//주문수량: 1 이상의 양수
@@ -82,11 +82,11 @@
     "orderResult": { //주문접수 결과
         "success": "1", //성공여부 (1 => 성공, 0 => 실패)
         "ordNo": "1525145229154", //주문번호
-        "oaType": "api", //제휴처 (api => oAPI를 이용한 일반 펫투비 주문을 뜻함)
+        "oaType": "api", //제휴처 (api => oAPI를 이용한 일반 정글북 주문을 뜻함)
         "oaApiOrdno": "123456", //제휴처 주문번호
-        "nameReceiver": "펫츠디자인", //수령자
+        "nameReceiver": "정글북", //수령자
         "zipCode": "12345", //우편번호
-        "address": "경기도 화성시 팔탄면 버들로 1362번길 10-12 펫츠디자인", //주소
+        "address": "경기도 화성시 팔탄면 버들로 1362번길 10-12 정글북", //주소
         "orderGoods": "[테스트] 일반상품 외 2건", //주문상품내용 요약
         "settleKind": "a", //결제방법
         "settlePrice": "7600", //총 결제금액
@@ -134,7 +134,7 @@
             "dupOrderData": {
                 "ordNo": "1525150381173",
                 "oaOrderNo": "123456",
-                "nameReceiver": "펫츠디자인"
+                "nameReceiver": "정글북"
             }
         },
         "errMsg": "duplicate order"
@@ -172,8 +172,8 @@
             "brand": "굿프랜드", //브랜드
             "goodsPrice": "850", //상품가격
             "suggestionSalesPrice": "1070", //제안 상품가격
-            "goodsDetail": "<img src=\"http://img.petsdesign.co.kr/pettob/desc/D170311007373_0.png\">", //상세정보
-            "goodsImage": "http://img.petsdesign.co.kr/pettob/goods/G170221007373_l.png", //상품이미지 (SEPERATOR: "|")
+            "goodsDetail": "<img src=\"http://img.junglebook.co.kr/pettob/desc/D170311007373_0.png\">", //상세정보
+            "goodsImage": "http://img.junglebook.co.kr/pettob/goods/G170221007373_l.png", //상품이미지 (SEPERATOR: "|")
             "goodsStock": "23", //재고
             "runout": "1", //품절여부
             "open": "1", //진열여부
@@ -196,9 +196,9 @@
         "ordNo": "1525145229154",
         "oaType": "api",
         "oaApiOrdno": "123456",
-        "nameReceiver": "펫츠디자인",
+        "nameReceiver": "정글북",
         "zipCode": "12345",
-        "address": "경기도 화성시 팔탄면 버들로 1362번길 10-12 펫츠디자인",
+        "address": "경기도 화성시 팔탄면 버들로 1362번길 10-12 정글북",
         "orderGoods": "[테스트] 일반상품 외 2건",
         "settleKind": "a",
         "settlePrice": "7600",
@@ -226,9 +226,9 @@
         "ordNo": "1525154725763",
         "oaType": "api",
         "oaApiOrdno": "123456",
-        "nameReceiver": "펫츠디자인",
+        "nameReceiver": "정글북",
         "zipCode": "12345",
-        "address": "경기도 화성시 팔탄면 버들로 1362번길 10-12 펫츠디자인",
+        "address": "경기도 화성시 팔탄면 버들로 1362번길 10-12 정글북",
         "orderGoods": "[테스트] 일반상품4 외 2건",
         "settleKind": "s",
         "settlePrice": "10006750",
@@ -289,20 +289,20 @@
 <pre>
 	<code>
 curl -X POST \
-  http://api.petsdesign.co.kr/order \
+  http://api.junglebook.co.kr/order \
   -H 'cache-control: no-cache' \
   -H 'pd_key: {발급받은 API key}' \
   -F 'data={
 	"oaType": null,
 	"oaOrderNo": "123456",
-	"nameReceiver": "펫츠디자인",
+	"nameReceiver": "정글북",
 	"phoneReceiver": "010-1234-5678",
 	"mobileReceiver": "010-1234-5678",
 	"zipCode": "12345",
 	"address": "경기도 화성시 팔탄면 버들로 1362번길 10-12",
-	"address2": "펫츠디자인",
+	"address2": "정글북",
 	"settleKind": "a",
-	"bankSender": "펫투비",
+	"bankSender": "정글북",
 	"doubleCheck": "1",
 	"memo": "부재시 경비실에 맡겨주세요!",
 	"orderItem":[

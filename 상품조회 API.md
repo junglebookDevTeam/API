@@ -1,11 +1,11 @@
 # 상품조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.petsdesign.co.kr/goods/{상품번호} OR !{태그}[/{페이지번호}]</p>
-<p>Require header: pd_key (해당키는 펫츠디자인 개발팀에 발급요청 하시기바랍니다. dev@petsdesign.co.kr)</p>
+<p>URL: http://api.junglebook.co.kr/goods/{상품번호} OR !{태그}[/{페이지번호}]</p>
+<p>Require header: pd_key (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
-<p>* {상품번호} OR !{태그}: 펫투비 상품번호 또는 !태그명</p>
-<p>* 전체상품 조회시 {상품번호} = "all" ex) http://api.petsdesign.co.kr/goods/all[/{페이지번호}]</p>
+<p>* {상품번호} OR !{태그}: 정글북 상품번호 또는 !태그명</p>
+<p>* 전체상품 조회시 {상품번호} = "all" ex) http://api.junglebook.co.kr/goods/all[/{페이지번호}]</p>
 <p>* 전체상품 조회시 페이징 처리가 되며, 한 페이지당 50개의 상품이 조회됩니다.</p>
 
 ## Response (JSON) ##
@@ -37,7 +37,7 @@
 
 ## 상품Tag 검색 ##
 
-http://api.petsdesign.co.kr/goods/!{태그}[/페이지번호]
+http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
 * 태그로 상품조회시 태그명 앞에 "!" 삽입
 
 태그 리스트
@@ -57,7 +57,7 @@ http://api.petsdesign.co.kr/goods/!{태그}[/페이지번호]
 <pre>
 	<code>
 		curl -X GET
-		http://api.petsdesign.co.kr/goods/{상품번호} OR all OR !{태그}[/{페이지번호}]
+		http://api.junglebook.co.kr/goods/{상품번호} OR all OR !{태그}[/{페이지번호}]
 		-H 'cache-control: no-cache'
 		-H 'pd_key: {발급받은 API key}'
 	</code>
