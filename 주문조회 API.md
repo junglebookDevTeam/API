@@ -43,7 +43,7 @@
 		<li>21: KG로지스</li>
 	</ul>
   <li>invoiceCompanyNm: 배송사명</li>
-  <li>invoiceNo: 송장번호 (해당 주문의 송장번호가 2개 이상인경우, 콤마로 구분 ex: 123456789000,123456789001)</li>
+  <li>invoiceNo: 송장번호 (송장번호가 2개 이상인경우, 구분자 콤마(,) ex: 123456789000,123456789001)</li>
   <li>orderStatus: 주문상태</li>
 	<ul>
 		<li>0: 주문접수</li>
