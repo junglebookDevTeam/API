@@ -38,9 +38,14 @@
   <li>deliveryCharge: 배송비</li>
   <li>invoiceCompanySno: 배송사코드</li>
 	<ul>
-		<li>12: 한진택배</li>
 		<li>15: CJ대한통운</li>
-		<li>21: KG로지스</li>
+		<li>1: KGB택배</li>
+		<li>39: 경동택배</li>
+		<li>21: 드림택배</li>
+		<li>5: 로젠택배</li>
+		<li>13: 롯데택배</li>
+		<li>19: 천일택배</li>
+		<li>12: 한진택배</li>
 	</ul>
   <li>invoiceCompanyNm: 배송사명</li>
   <li>invoiceNo: 송장번호 (송장번호가 2개 이상인경우, 구분자 콤마(,) ex: 123456789000,123456789001)</li>
