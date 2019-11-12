@@ -25,7 +25,8 @@
     <li>goodsPrice: 상품판매가(파트너사의 매입가)</li>
     <li>suggestionSalesPrice: 제안 판매가</li>
     <li>goodsDetail: 상품상세정보</li>
-    <li>goodsImage: 상품이미지</li>
+	<li>goodsRepImage: 상품대표 이미지</li>
+    <li>goodsImage: 상품 추가 이미지(array)</li>
     <li>goodsStock: 상품재고수</li>
     <li>runout: 품절여부</li>
     <li>open: 진열여부</li>
