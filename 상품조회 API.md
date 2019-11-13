@@ -1,12 +1,22 @@
 # 상품조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.junglebook.co.kr/goods/{상품번호} OR !{태그}[/{페이지번호}]</p>
-<p>Require header: pd_key (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
+<p>URL: http://api.junglebook.co.kr/goods/{상품번호}[/{페이지번호}]?{조건 파라미터}={값}</p>
+<p>Require header: Authorization (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
-<p>* {상품번호} OR !{태그}: 정글북 상품번호 또는 !태그명</p>
-<p>* 전체상품 조회시 {상품번호} = "all" ex) http://api.junglebook.co.kr/goods/all[/{페이지번호}]</p>
-<p>* 전체상품 조회시 페이징 처리가 되며, 한 페이지당 50개의 상품이 조회됩니다.</p>
+## Code sample ##
+<blockquote>
+	<p>cURL</p>
+</blockquote>
+<pre>
+	<code>
+		// 상품번호 조회
+		curl -X GET
+		http://api.junglebook.co.kr/goods/47]
+		-H 'cache-control: no-cache'
+		-H 'Authorization: {access_token}'
+	</code>
+</pre>
 
 ## Response (JSON) ##
 <ul>
@@ -50,16 +60,3 @@ http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
 	<li><code>!오프전용</code>: 오프라인에서만 판매/유통 할 수 있는 상품입니다.</li>
 	<li><code>!단가인상</code>: 단가인상 예정인 상품 입니다.</li>
 </ul>
-
-## Code sample ##
-<blockquote>
-	<p>cURL</p>
-</blockquote>
-<pre>
-	<code>
-		curl -X GET
-		http://api.junglebook.co.kr/goods/{상품번호} OR all OR !{태그}[/{페이지번호}]
-		-H 'cache-control: no-cache'
-		-H 'pd_key: {발급받은 API key}'
-	</code>
-</pre>
