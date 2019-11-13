@@ -6,9 +6,9 @@
 
 {라우트파라미터}
 <ul>
-	<li>특정상품 조회시 {라우트파라미터} = "{상품번호}"<br>ex) http://api.junglebook.co.kr/goods/3754</li>
-	<li>전체상품 조회시 {라우트파라미터} = "all"<br>ex) http://api.junglebook.co.kr/goods/all/2</li>
-	<li>미진열상품 조회시 {라우트파라미터} = "close"<br>ex) http://api.junglebook.co.kr/goods/close/3</li>
+	<li>특정상품 조회시 {라우트파라미터} = "{상품번호}" ex) http://api.junglebook.co.kr/goods/3754</li>
+	<li>전체상품 조회시 {라우트파라미터} = "all" ex) http://api.junglebook.co.kr/goods/all/2</li>
+	<li>미진열상품 조회시 {라우트파라미터} = "close" ex) http://api.junglebook.co.kr/goods/close/3</li>
 	<li>전체 또는 미진열 상품 조회시 페이징 처리가 되며, 한 페이지당 100개의 상품이 조회됩니다.</li>
 </ul>
 
