@@ -1,22 +1,21 @@
 # 상품조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.junglebook.co.kr/goods/{상품번호}[/{페이지번호}]?{조건파라미터}={값}</p>
+<p>URL: http://api.junglebook.co.kr/goods/{라우트파라미터}[/{페이지번호}]?{조건파라미터}={값}</p>
 <p>Require header: Authorization (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
-## Code sample ##
-<blockquote>
-	<p>cURL</p>
-</blockquote>
-<pre>
-	<code>
-		// 상품번호 조회
-		curl -X GET
-		http://api.junglebook.co.kr/goods/47]
-		-H 'cache-control: no-cache'
-		-H 'Authorization: {access_token}'
-	</code>
-</pre>
+{라우트파라미터}
+<ul>
+	<li>특정상품 조회시 {라우트파라미터} = "{상품번호}" ex) http://api.junglebook.co.kr/goods/3754</li>
+	<li>전체상품 조회시 {라우트파라미터} = "all" ex) http://api.junglebook.co.kr/goods/all[/{페이지번호}]</li>
+	<li>미진열상품 조회시 {라우트파라미터} = "close" ex) http://api.junglebook.co.kr/goods/close[/{페이지번호}]</li>
+	<li>전체 또는 미진열 상품 조회시 페이징 처리가 되며, 한 페이지당 100개의 상품이 조회됩니다.</li>
+</ul>
+
+{조건파라미터}
+<ul>
+	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회</li>
+</ul>
 
 ## Response (JSON) ##
 <ul>
@@ -26,6 +25,7 @@
   <li>data: 상품정보(array)</li>
   <ul>
     <li>goodsNo: 상품번호</li>
+	<li>open: 진열여부(open 값이 0 인경후 이하 상품정보는 null 처리 됩니다.)</li>
     <li>goodsNm: 상품명</li>
     <li>categoryCode: 카테고리코드(SEPERATOR "|")</li>
     <li>categoryNm: 카테고리명(SEPERATOR "|")</li>
@@ -39,7 +39,6 @@
     <li>goodsImage: 상품 추가 이미지(array)</li>
     <li>goodsStock: 상품재고수</li>
     <li>runout: 품절여부</li>
-    <li>open: 진열여부</li>
     <li>EAD: 재입고일</li>
     <li>inPackageEA: 패키지 입수량</li>
 	<li>tags: 상품 특이사항(SEPERATOR ",")</li>
@@ -60,3 +59,17 @@ http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
 	<li><code>!오프전용</code>: 오프라인에서만 판매/유통 할 수 있는 상품입니다.</li>
 	<li><code>!단가인상</code>: 단가인상 예정인 상품 입니다.</li>
 </ul>
+
+## Code sample ##
+<blockquote>
+	<p>cURL</p>
+</blockquote>
+<pre>
+	<code>
+		// 상품번호 조회
+		curl -X GET
+		http://api.junglebook.co.kr/goods/47
+		-H 'cache-control: no-cache'
+		-H 'Authorization: {access_token}'
+	</code>
+</pre>
