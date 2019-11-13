@@ -25,7 +25,7 @@
   <li>data: 상품정보(array)</li>
   <ul>
     <li>goodsNo: 상품번호</li>
-	<li>open: 진열여부 (<sup>*</sup>open 값이 "0" 인 경우 이하 상품정보값은 표시 하지 않습니다.)</li>
+	<li>open: 진열여부 (* open 값이 "0" 인 경우 이하 상품정보값은 표시 하지 않습니다.)</li>
     <li>goodsNm: 상품명</li>
     <li>categoryCode: 카테고리코드(SEPERATOR "|")</li>
     <li>categoryNm: 카테고리명(SEPERATOR "|")</li>
