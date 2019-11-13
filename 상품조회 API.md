@@ -1,7 +1,7 @@
 # 상품조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.junglebook.co.kr/goods/{상품번호}[/{페이지번호}]?{조건 파라미터}={값}</p>
+<p>URL: http://api.junglebook.co.kr/goods/{상품번호}[/{페이지번호}]?{조건파라미터}={값}</p>
 <p>Require header: Authorization (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 ## Code sample ##
