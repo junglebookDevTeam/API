@@ -14,7 +14,7 @@
 
 {조건파라미터}
 <ul>
-	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회</li>
+	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)</li>
 </ul>
 
 ## Response (JSON) ##
