@@ -73,7 +73,7 @@ http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
 	<code>
 		// 상품번호 조회
 		curl -X GET
-		http://api.junglebook.co.kr/goods/{상품번호}
+		http://api.junglebook.co.kr/goods/3754
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
