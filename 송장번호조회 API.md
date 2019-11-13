@@ -1,21 +1,23 @@
 # 송장번호 조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.junglebook.co.kr/invoice/{주문번호}[/{OA타입}]</p>
+<p>URL: http://api.junglebook.co.kr/invoice/{라우트파라미터}[/{OA타입}]</p>
 <p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
-<p>* {주문번호}: 정글북 주문번호 또는 OA주문번호</p>
-<p>* {OA타입} (optional): OA주문번호로 조회시 OA타입을 지정해주면 찾고자 하는 주문정보를 보다 정확히 리턴 받을수 있습니다.</p>
-<p>
-	{OA타입} = 
-	<ul>
-		<li>pettob: 정글북 주문서</li>
-		<li>storefarm: 스토어팜 주문서</li>
-		<li>emp: EMP(Playauto) 주문서</li>
-		<li>talkstore: 톡스토어 주문서</li>
-		<li>mall: 자체운영몰 주문서</li>
-	</ul>
-</p>
+{라우트파라미터}
+<ul>
+	<li>주문번호로 송장번호 조회시 {라우트파라미터} = "{주문번호}" ex) http://api.junglebook.co.kr/invoice/1567382399000</li>
+	<li>OA주문번호로 송장번호 조회시 {라우트파라미터} = "{OA주문번호}" ex) http://api.junglebook.co.kr/invoice/201909010001</li>
+	<li>{OA타입} (optional): OA주문번호로 조회시 OA타입을 지정해주면 찾고자 하는 주문정보를 보다 정확히 리턴 받을수 있습니다.
+		<ul>
+			<li>pettob: 정글북 주문서</li>
+			<li>storefarm: 스토어팜 주문서</li>
+			<li>emp: EMP(Playauto) 주문서</li>
+			<li>talkstore: 톡스토어 주문서</li>
+			<li>mall: 자체운영몰 주문서</li>
+		</ul>
+	</li>
+</ul>
 
 ## Response (JSON) ##
 <ul>
@@ -45,8 +47,16 @@
 </blockquote>
 <pre>
 	<code>
+		// 주문번호로 송장번호 조회
 		curl -X GET
-		http://api.junglebook.co.kr/invoice/{주문번호}[/{OA타입}]
+		http://api.junglebook.co.kr/invoice/{주문번호}
+		-H 'cache-control: no-cache'
+		-H 'Authorization: {api_key}'
+	</code>
+	<code>
+		// OA주문번호로 송장번호 조회
+		curl -X GET
+		http://api.junglebook.co.kr/invoice/{OA주문번호}[/{OA타입}]
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>

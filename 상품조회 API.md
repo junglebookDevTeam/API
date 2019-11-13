@@ -68,7 +68,28 @@ http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
 	<code>
 		// 상품번호 조회
 		curl -X GET
-		http://api.junglebook.co.kr/goods/47
+		http://api.junglebook.co.kr/goods/{상품번호}
+		-H 'cache-control: no-cache'
+		-H 'Authorization: {api_key}'
+	</code>
+	<code>
+		// 전체상품 조회
+		curl -X GET
+		http://api.junglebook.co.kr/goods/all
+		-H 'cache-control: no-cache'
+		-H 'Authorization: {api_key}'
+	</code>
+	<code>
+		// 미진열 상품 조회
+		curl -X GET
+		http://api.junglebook.co.kr/goods/close
+		-H 'cache-control: no-cache'
+		-H 'Authorization: {api_key}'
+	</code>
+	<code>
+		// Tag검색
+		curl -X GET
+		http://api.junglebook.co.kr/goods/!긴급소진
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
