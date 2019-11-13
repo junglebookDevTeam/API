@@ -12,6 +12,11 @@
 	<li>전체 또는 미진열 상품 조회시 페이징 처리가 되며, 한 페이지당 100개의 상품이 조회됩니다.</li>
 </ul>
 
+[/{페이지번호}] (optional)
+<ul>
+	<li>전체 또는 미진열 상품 조회시 사용하는 파라미터 입니다 ex) http://api.junglebook.co.kr/goods/all/7</li>
+</ul>
+
 {조건파라미터}
 <ul>
 	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)<br>ex) http://api.junglebook.co.kr/goods/all?updateAfter=2019-09-01</li>

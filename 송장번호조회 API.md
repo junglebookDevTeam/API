@@ -7,16 +7,21 @@
 {라우트파라미터}
 <ul>
 	<li>주문번호로 송장번호 조회시 {라우트파라미터} = "{주문번호}" ex) http://api.junglebook.co.kr/invoice/1567382399000</li>
-	<li>OA주문번호로 송장번호 조회시 {라우트파라미터} = "{OA주문번호}" ex) http://api.junglebook.co.kr/invoice/201909010001</li>
+	<li>OA주문번호로 송장번호 조회시 {라우트파라미터} = "{OA주문번호}" ex) http://api.junglebook.co.kr/invoice/190901001</li>
 	<li>{OA타입} (optional): OA주문번호로 조회시 OA타입을 지정해주면 찾고자 하는 주문정보를 보다 정확히 리턴 받을수 있습니다.
 		<ul>
-			<li>pettob: 정글북 주문서</li>
+			<li>null: 정글북 또는 펫투비 주문서</li>
 			<li>storefarm: 스토어팜 주문서</li>
 			<li>emp: EMP(Playauto) 주문서</li>
 			<li>talkstore: 톡스토어 주문서</li>
 			<li>mall: 자체운영몰 주문서</li>
 		</ul>
 	</li>
+</ul>
+
+[/{OA타입}] (optional)
+<ul>
+	<li>OA주문번호로 송장번호 조회시 사용하는 파라미터 입니다 ex) http://api.junglebook.co.kr/invoice/190901001/mall</li>
 </ul>
 
 ## Response (JSON) ##
