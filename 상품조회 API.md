@@ -14,7 +14,7 @@
 
 {조건파라미터}
 <ul>
-	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)</li>
+	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd) ex) http://api.junglebook.co.kr/goods/all?updateAfter=2019-09-01</li>
 </ul>
 
 ## Response (JSON) ##
@@ -25,7 +25,7 @@
   <li>data: 상품정보(array)</li>
   <ul>
     <li>goodsNo: 상품번호</li>
-	<li>open: 진열여부</li>
+	<li>open: 진열여부 (<sup>*</sup>open 값이 "0" 인 경우 이하 상품정보값은 표시 하지 않습니다.)</li>
     <li>goodsNm: 상품명</li>
     <li>categoryCode: 카테고리코드(SEPERATOR "|")</li>
     <li>categoryNm: 카테고리명(SEPERATOR "|")</li>
