@@ -2,7 +2,7 @@
 
 ## Request (GET) ##
 <p>URL: http://api.junglebook.co.kr/goods/{라우트파라미터}[/{페이지번호}]?{조건파라미터}={값}</p>
-<p>Require header: Authorization (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
+<p><p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p></p>
 
 {라우트파라미터}
 <ul>
@@ -70,6 +70,6 @@ http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
 		curl -X GET
 		http://api.junglebook.co.kr/goods/47
 		-H 'cache-control: no-cache'
-		-H 'Authorization: {access_token}'
+		-H 'Authorization: {api_key}'
 	</code>
 </pre>

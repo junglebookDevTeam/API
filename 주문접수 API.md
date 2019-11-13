@@ -3,7 +3,7 @@
 ## Request (POST) ##
 <p>주문 요청 URL: http://api.junglebook.co.kr/order</p>
 <p>테스트 주문 요청URL: http://api.junglebook.co.kr/order/test</p>
-<p>Require header: pd_key (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
+<p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 ## Response parameters ##
 
@@ -291,7 +291,7 @@
 curl -X POST \
   http://api.junglebook.co.kr/order \
   -H 'cache-control: no-cache' \
-  -H 'pd_key: {발급받은 API key}' \
+  -H 'Authorization: {api_key}' \
   -F 'data={
 	"oaType": null,
 	"oaOrderNo": "123456",

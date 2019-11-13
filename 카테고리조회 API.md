@@ -2,7 +2,7 @@
 
 ## Request (GET) ##
 <p>URL: http://api.junglebook.co.kr/category[/{카테고리코드}]</p>
-<p>Require header: pd_key (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
+<p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 <p>* 전체카테고리 조회시 => http://api.junglebook.co.kr/category</p>
 <p>* 특정 카테고리 조회시 => http://api.junglebook.co.kr/category[/{카테고리코드}]</p>
@@ -34,6 +34,6 @@
 		curl -X GET
 		http://api.junglebook.co.kr/category[/{카테고리코드}]
 		-H 'cache-control: no-cache'
-		-H 'pd_key: {발급받은 API key}'
+		-H 'Authorization: {api_key}'
 	</code>
 </pre>

@@ -2,7 +2,7 @@
 
 ## Request (GET) ##
 <p>URL: http://api.junglebook.co.kr/invoice/{주문번호}[/{OA타입}]</p>
-<p>Require header: pd_key (해당키는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
+<p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 <p>* {주문번호}: 정글북 주문번호 또는 OA주문번호</p>
 <p>* {OA타입} (optional): OA주문번호로 조회시 OA타입을 지정해주면 찾고자 하는 주문정보를 보다 정확히 리턴 받을수 있습니다.</p>
@@ -48,6 +48,6 @@
 		curl -X GET
 		http://api.junglebook.co.kr/invoice/{주문번호}[/{OA타입}]
 		-H 'cache-control: no-cache'
-		-H 'pd_key: {발급받은 API key}'
+		-H 'Authorization: {api_key}'
 	</code>
 </pre>
