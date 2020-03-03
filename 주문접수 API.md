@@ -279,6 +279,7 @@
 | 205  | invalid max order quantity  | 최대 구매 수량 오류  |
 | 206  | runout  | 주문상품 품절  |
 | 207  | not enough stock  | 주문상품 재고부족  |
+| 208  | items that can not be ordered by request of supplier  | 공급사 요청으로 인한 구매제한 상품 주문  |
 
 
 
