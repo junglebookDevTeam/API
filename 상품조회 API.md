@@ -52,17 +52,15 @@
 
 ## 상품Tag 검색 ##
 
-http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
-* 태그로 상품조회시 태그명 앞에 "!" 삽입
+http://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
 
 태그 리스트
 <ul>
-	<li><code>!긴급소진</code>: 유통기한 임박 또는 악성재고 상품으로 분류되어 빠르게 소진 해야 할 상품 입니다.</li>
-	<li><code>!본사품절</code>: 유통본사 재고가 없는 상품으로 분류되어 발주 및 입고예정일을 확인 할 수 없는 상품 입니다.</li>
-	<li><code>!롱-리드</code>: 재입고까지 최소 2주 이상 걸리는 리드타임이 긴 상품 입니다.</li>
-	<li><code>!단종</code>: 단종된 상품 입니다.</li>
-	<li><code>!오프전용</code>: 오프라인에서만 판매/유통 할 수 있는 상품입니다.</li>
-	<li><code>!단가인상</code>: 단가인상 예정인 상품 입니다.</li>
+	<li><code>긴급소진</code>: 유통기한 임박 또는 악성재고 상품으로 분류되어 빠르게 소진 해야 할 상품 입니다.</li>
+	<li><code>본사품절</code>: 유통본사 재고가 없는 상품으로 분류되어 발주 및 입고예정일을 확인 할 수 없는 상품 입니다.</li>
+	<li><code>단종</code>: 단종된 상품 입니다.</li>
+	<li><code>오프전용</code>: 오프라인에서만 판매/유통 할 수 있는 상품입니다.</li>
+	<li><code>단가인상</code>: 단가인상 예정인 상품 입니다.</li>
 </ul>
 
 ## Code sample ##
@@ -94,7 +92,7 @@ http://api.junglebook.co.kr/goods/!{태그}[/페이지번호]
 	<code>
 		// Tag검색
 		curl -X GET
-		http://api.junglebook.co.kr/goods/!긴급소진
+		http://api.junglebook.co.kr/goods/tag/1?query=단종
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
