@@ -44,6 +44,7 @@
     <li>goodsImage: 상품 추가 이미지(array)</li>
     <li>goodsStock: 상품재고수</li>
     <li>runout: 품절여부</li>
+	<li>barcode: 상품 바코드 (바코드 시작 값이 "A" 인 경우 정글북에서 임의 생성한 바코드 입니다. 경우에 따라 상품의 실제 바코드와 다를 수 있습니다.)</li>
     <li>EAD: 재입고일</li>
     <li>inPackageEA: 패키지 입수량</li>
 	<li>tags: 상품 특이사항(SEPERATOR ",")</li>
