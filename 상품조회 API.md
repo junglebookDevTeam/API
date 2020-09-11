@@ -38,7 +38,16 @@
     <li>maker: 제조사</li>
     <li>brand: 브렌드</li>
     <li>goodsPrice: 상품판매가(파트너사의 매입가)</li>
-    <li>suggestionSalesPrice: 제안 판매가</li>
+    <li>suggestionSalesPrice: 파트너사의 권장 판매가</li>
+		<ul>
+			<li>권장 판매가의 경우 기본적으로 goodsPrice 값의 마진율 20% 계산한 금액을 리턴 합니다.</li>
+			<li>상품공급 계약에 따라 파트너사가 고객에게 특정 판매가로 판매 하셔야 할 경우 goodsPrice 값 기준으로 계약 판매 마진율 N%가 계산된 상품 판매가를 리턴해 드립니다.</li>
+			<li>별도 상품공급 계약을 하지 않은 파트너사는 리턴해 드리는 권장 판매가를 무시 하셔도 좋습니다.</li>
+			<li>(단, 상품별로 온라인/오프라인 최소 판매가 준수 사항이 있으니 관련 문의는 정글북 MD팀으로 문의 부탁 드립니다!)</li>
+			<li>계산공식: suggestionSalesPrice = goodsPrice / (100 - N), N = 계약 판매 마진율(%), 10의 자리 올림 처리</li>
+		</ul>
+	<li>sspProfitRate: 권장 판매가 마진율(%), (suggestionSalesPrice의 10의 자리 올림 처리로 계약 마진율 보다 같거나 높을 수 있습니다.)</li>
+	<li>suggestionRetailPrice: 권장 소비자가</li>
     <li>goodsDetail: 상품상세정보</li>
 	<li>goodsRepImage: 상품대표 이미지</li>
     <li>goodsImage: 상품 추가 이미지(array)</li>
