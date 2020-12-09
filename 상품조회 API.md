@@ -24,7 +24,7 @@
 
 ## Response (JSON) ##
 <ul>
-  <li><code>total</code>(int): 조회된 상품수</li>
+  <li><code><strong>total</strong></code>(int): 조회된 상품수</li>
   <li><code>totalPageCnt</code>(int): 전체 페이지수</li>
   <li><code>currentPage</code>(int): 현재 페이지번호</li>
   <li><code>data</code>(array): 상품정보</li>
