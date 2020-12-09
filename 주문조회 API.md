@@ -85,10 +85,10 @@
 		<li>11: 입고대기</li>
 	</ul>
   <li><code><strong>insEprDt</strong></code>(date): 출고가능날짜</li>
-  <li><code><strong>regDt</strong></code>(date): 주문접수일</li>
-  <li><code><strong>paymentDt</strong></code>(date): 결제완료일</li>
-  <li><code><strong>deliveryDt</strong></code>(date): 출고일</li>
-  <li><code><strong>modDt</strong></code>(date): 최근수정일</li>
+  <li><code><strong>regDt</strong></code>(datetime): 주문접수일</li>
+  <li><code><strong>paymentDt</strong></code>(datetime): 결제완료일</li>
+  <li><code><strong>deliveryDt</strong></code>(datetime): 출고일</li>
+  <li><code><strong>modDt</strong></code>(datetime): 최근수정일</li>
   
   <li><code><strong>item</strong></code>(array): 주문상품</li>
 	<ul>
