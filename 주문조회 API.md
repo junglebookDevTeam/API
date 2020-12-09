@@ -27,24 +27,24 @@
 
 ## Response (JSON) ##
 <ul>
-  <li>orderNo (bigint 20): 주문번호</li>
-  <li>oaType (varchar 50) : OA타입</li>
-  <li>oaOrderNo (varchar 100): OA주문번호</li>
-  <li>orderName (varchar 20): 주문자명</li>
-  <li>orderPhone (varchar 15) : 주문자 전화번호</li>
-  <li>orderCellPhone (varchar 15): 주문자 휴대폰번호</li>
-  <li>receiverName (varchar 20): 수취인명</li>
-  <li>receiverPhone (varchar 15): 수취인 전화번호</li>
-  <li>receiverCellPhone (varchar 15): 수취인 휴대폰번호</li>
-  <li>receiverZonecode (varchar 5): 수취인 우편번호(신)</li>
-  <li>receiverRoadAddress (varchar 100): 수취인 도로명주소(전체)</li>
-  <li>receiverZipcode (varchar 7): 수취인 우편번호(구)</li>
-  <li>receiverAddress (varchar 100): 수취인 주소(전체)</li>
-  <li>orderMemo (varchar 100): 배송메세지</li>
-  <li>settlePrice (int 10): 결제금액</li>
-  <li>deliveryType (varchar 10): 배송타입</li>
-  <li>deliveryCharge (int 10): 배송비</li>
-  <li>invoiceCompanySno (int 3): 배송사코드</li>
+  <li>orderNo(bigint 20): 주문번호</li>
+  <li>oaType(varchar 50) : OA타입</li>
+  <li>oaOrderNo(varchar 100): OA주문번호</li>
+  <li>orderName(varchar 20): 주문자명</li>
+  <li>orderPhone(varchar 15) : 주문자 전화번호</li>
+  <li>orderCellPhone(varchar 15): 주문자 휴대폰번호</li>
+  <li>receiverName(varchar 20): 수취인명</li>
+  <li>receiverPhone(varchar 15): 수취인 전화번호</li>
+  <li>receiverCellPhone(varchar 15): 수취인 휴대폰번호</li>
+  <li>receiverZonecode(varchar 5): 수취인 우편번호(신)</li>
+  <li>receiverRoadAddress(varchar 100): 수취인 도로명주소(전체)</li>
+  <li>receiverZipcode(varchar 7): 수취인 우편번호(구)</li>
+  <li>receiverAddress(varchar 100): 수취인 주소(전체)</li>
+  <li>orderMemo(varchar 100): 배송메세지</li>
+  <li>settlePrice(int 10): 결제금액</li>
+  <li>deliveryType(varchar 10): 배송타입</li>
+  <li>deliveryCharge(int 10): 배송비</li>
+  <li>invoiceCompanySno(int 3): 배송사코드</li>
 	<ul>
 		<li>15: CJ대한통운</li>
 		<li>1: KGB택배</li>
@@ -55,16 +55,16 @@
 		<li>19: 천일택배</li>
 		<li>12: 한진택배</li>
 	</ul>
-  <li>invoiceCompanyNm (varchar 20): 배송사명</li>
-  <li>invoiceNo (varchar 500): 송장번호 (송장번호가 2개 이상인경우, 구분자 콤마(,) ex: 123456789000,123456789001)</li>
-  <li>orderStatus (int 4): 주문상태</li>
+  <li>invoiceCompanyNm(varchar 20): 배송사명</li>
+  <li>invoiceNo(varchar 500): 송장번호 (송장번호가 2개 이상인경우, 구분자 콤마(,) ex: 123456789000,123456789001)</li>
+  <li>orderStatus(int 4): 주문상태</li>
 	<ul>
 		<li>0: 주문접수</li>
 		<li>1: 결제완료</li>
 		<li>2: 상품준비중</li>
 		<li>3: 출고완료</li>
 	</ul>
-  <li>orderClaimStatus (int 4): 주문클레임상태</li>
+  <li>orderClaimStatus(int 4): 주문클레임상태</li>
 	<ul>
 		<li>0: null</li>
 		<li>40: 취소요청</li>
@@ -75,7 +75,7 @@
 		<li>51: PG에러</li>
 		<li>54: 결제실패</li>
 	</ul>
-  <li>insStatus (int 4): 검수상태</li>
+  <li>insStatus(int 4): 검수상태</li>
 	<ul>
 		<li>0: null</li>
 		<li>1: 검수중</li>
@@ -84,20 +84,20 @@
 		<li>10: 검수불가</li>
 		<li>11: 입고대기</li>
 	</ul>
-  <li>insEprDt (date): 출고가능날짜</li>
-  <li>regDt (date): 주문접수일</li>
-  <li>paymentDt (date): 결제완료일</li>
-  <li>deliveryDt (date): 출고일</li>
-  <li>modDt (date): 최근수정일</li>
+  <li>insEprDt(date): 출고가능날짜</li>
+  <li>regDt(date): 주문접수일</li>
+  <li>paymentDt(date): 결제완료일</li>
+  <li>deliveryDt(date): 출고일</li>
+  <li>modDt(date): 최근수정일</li>
   
-  <li>item (array): 주문상품</li>
+  <li>item(array): 주문상품</li>
 	<ul>
-		<li>goodsNo (int 10): 상품고유번호</li>
-		<li>goodsNm (varchar 255): 상품명</li>
-		<li>makerNm (varchar 50): 제조사</li> #Deprecated
-		<li>brandNm (varchar 20): 브랜드</li> #Deprecated
-		<li>goodsPrice (int 10): 판매가격</li>
-		<li>claimStatus (int 4): 클레임상태</li>
+		<li>goodsNo(int 10): 상품고유번호</li>
+		<li>goodsNm(varchar 255): 상품명</li>
+		<li>makerNm(varchar 50): 제조사</li> #Deprecated
+		<li>brandNm(varchar 20): 브랜드</li> #Deprecated
+		<li>goodsPrice(int 10): 판매가격</li>
+		<li>claimStatus(int 4): 클레임상태</li>
 			<ul>
 				<li>0: null</li>
 				<li>31: 추가발송</li>
@@ -108,7 +108,7 @@
 				<li>51: PG에러</li>
 				<li>54: 결제실패</li>
 			</ul>
-		<li>orderCnt (int): 주문수량</li>
+		<li>orderCnt(int): 주문수량</li>
 	</ul>
 </ul>
 
