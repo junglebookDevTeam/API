@@ -1,8 +1,8 @@
 # 주문접수 API
 
 ## Request (POST) ##
-<p>주문 요청 URL: http://api.junglebook.co.kr/order</p>
-<p>테스트 주문 요청URL: http://api.junglebook.co.kr/order/test</p>
+<p>주문 요청 URL: https://api.junglebook.co.kr/order</p>
+<p>테스트 주문 요청URL: https://api.junglebook.co.kr/order/test</p>
 <p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 ## Response parameters ##
@@ -291,7 +291,7 @@
 <pre>
 	<code>
 curl -X POST \
-  http://api.junglebook.co.kr/order \
+  https://api.junglebook.co.kr/order \
   -H 'cache-control: no-cache' \
   -H 'Authorization: {api_key}' \
   -F 'data={

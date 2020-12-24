@@ -1,25 +1,25 @@
 # 상품조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.junglebook.co.kr/goods/{라우트파라미터}[/{페이지번호}]?{조건파라미터}={값}</p>
+<p>URL: https://api.junglebook.co.kr/goods/{라우트파라미터}[/{페이지번호}]?{조건파라미터}={값}</p>
 <p><p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p></p>
 
 {라우트파라미터}
 <ul>
-	<li>특정상품 조회시 {라우트파라미터} = "{상품번호}" ex) http://api.junglebook.co.kr/goods/3754</li>
-	<li>전체상품 조회시 {라우트파라미터} = "all" ex) http://api.junglebook.co.kr/goods/all/2</li>
-	<li>미진열상품 조회시 {라우트파라미터} = "close" ex) http://api.junglebook.co.kr/goods/close/3</li>
+	<li>특정상품 조회시 {라우트파라미터} = "{상품번호}" ex) https://api.junglebook.co.kr/goods/3754</li>
+	<li>전체상품 조회시 {라우트파라미터} = "all" ex) https://api.junglebook.co.kr/goods/all/2</li>
+	<li>미진열상품 조회시 {라우트파라미터} = "close" ex) https://api.junglebook.co.kr/goods/close/3</li>
 	<li>전체 또는 미진열 상품 조회시 페이징 처리가 되며, 한 페이지당 100개의 상품이 조회됩니다.</li>
 </ul>
 
 [/{페이지번호}] (optional)
 <ul>
-	<li>전체 또는 미진열 상품 조회시 사용하는 파라미터 입니다 ex) http://api.junglebook.co.kr/goods/all/7</li>
+	<li>전체 또는 미진열 상품 조회시 사용하는 파라미터 입니다 ex) https://api.junglebook.co.kr/goods/all/7</li>
 </ul>
 
 {조건파라미터}
 <ul>
-	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)<br>ex) http://api.junglebook.co.kr/goods/all?updateAfter=2019-09-01</li>
+	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)<br>ex) https://api.junglebook.co.kr/goods/all?updateAfter=2019-09-01</li>
 </ul>
 
 ## Response (JSON) ##
@@ -62,7 +62,7 @@
 
 ## 상품Tag 검색 ##
 
-http://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
+https://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
 
 태그 리스트
 <ul>
@@ -82,28 +82,28 @@ http://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
 	<code>
 		// 상품번호 조회
 		curl -X GET
-		http://api.junglebook.co.kr/goods/3754
+		https://api.junglebook.co.kr/goods/3754
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
 	<code>
 		// 전체상품 조회
 		curl -X GET
-		http://api.junglebook.co.kr/goods/all
+		https://api.junglebook.co.kr/goods/all
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
 	<code>
 		// 미진열 상품 조회
 		curl -X GET
-		http://api.junglebook.co.kr/goods/close
+		https://api.junglebook.co.kr/goods/close
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
 	<code>
 		// Tag검색
 		curl -X GET
-		http://api.junglebook.co.kr/goods/tag/1?query=단종
+		https://api.junglebook.co.kr/goods/tag/1?query=단종
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>

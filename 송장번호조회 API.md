@@ -1,7 +1,7 @@
 # 송장번호 조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.junglebook.co.kr/invoice/{주문번호}[/{OA타입}]</p>
+<p>URL: https://api.junglebook.co.kr/invoice/{주문번호}[/{OA타입}]</p>
 <p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 <p>* {주문번호}: 정글북 주문번호 또는 OA주문번호(고객사에서 관리하고 있는 주문번호)</p>
@@ -47,14 +47,14 @@
 	<code>
 		// 주문번호로 송장번호 조회
 		curl -X GET
-		http://api.junglebook.co.kr/invoice/{주문번호}
+		https://api.junglebook.co.kr/invoice/{주문번호}
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
 	<code>
 		// OA주문번호로 송장번호 조회
 		curl -X GET
-		http://api.junglebook.co.kr/invoice/{OA주문번호}[/{OA타입}]
+		https://api.junglebook.co.kr/invoice/{OA주문번호}[/{OA타입}]
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>

@@ -1,13 +1,13 @@
 # 회원정보 조회 API
 
 ## Request (GET) ##
-<p>URL: http://api.junglebook.co.kr/member/{라우트파라미터}</p>
+<p>URL: https://api.junglebook.co.kr/member/{라우트파라미터}</p>
 <p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 
 {라우트파라미터}
 <ul>
-	<li><code>cash</code>: 현재 캐쉬 및 포인트 잔액<br>ex) http://api.junglebook.co.kr/member/cash</li>
+	<li><code>cash</code>: 현재 캐쉬 및 포인트 잔액<br>ex) https://api.junglebook.co.kr/member/cash</li>
 </ul>
 
 ## Response (JSON) ##
@@ -28,7 +28,7 @@
 	<code>
 		//캐쉬 및 포인트 잔액 조회
 		curl -X GET
-		http://api.junglebook.co.kr/member/cash
+		https://api.junglebook.co.kr/member/cash
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
