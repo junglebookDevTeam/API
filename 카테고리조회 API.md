@@ -11,7 +11,7 @@
 			<li>1 depth: <code>032</code> (고양이)</li>
 			<li>2 depth: <code>032</code><code>001</code> (사료)</li>
 			<li>3 depth: <code>032</code><code>001</code><code>001</code> (브랜드사료)</li>
-			<li>4 depth: <code>032</code><code>001</code><code>001</code></code>011</code> (로얄캐닌)</li>
+			<li>4 depth: <code>032</code><code>001</code><code>001</code></code><code>011</code> (로얄캐닌)</li>
 			<li>032001001011 => (고양이 > 사료 > 브랜드사료 > 로얄캐닌)</li>
 		</ul>
 	</li>
