@@ -68,12 +68,12 @@
 
 [/{페이지번호}] (optional)
 <ul>
-	<li>페이징 처리된 경우 페이지번호 파라미터를 이용하여 특정 페이지의 데이터를 조회 합니다. ex) https://api.junglebook.co.kr/category/031/goods/7</li>
+	<li>페이징 처리된 경우 페이지번호 파라미터를 이용하여 특정 페이지의 데이터를 조회 합니다. ex) https://api.junglebook.co.kr/category/032001/goods/7</li>
 </ul>
 
 {조건파라미터}
 <ul>
-	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)<br>ex) https://api.junglebook.co.kr/category/031/goods?updateAfter=2020-12-24</li>
+	<li><code>updateAfter</code>: 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)<br>ex) https://api.junglebook.co.kr/category/032001/goods?updateAfter=2020-12-24</li>
 </ul>
 
 ## Response (JSON) ##
@@ -88,7 +88,7 @@ https://github.com/junglebookDevTeam/API/blob/master/%EC%83%81%ED%92%88%EC%A1%B0
 <pre>
 	<code>
 		curl -X GET
-		https://api.junglebook.co.kr/category/031/goods/1
+		https://api.junglebook.co.kr/category/032001/goods/1
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
