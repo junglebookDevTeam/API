@@ -14,7 +14,7 @@
 
 [/{페이지번호}] (optional)
 <ul>
-	<li>전체 또는 미진열 상품 조회시 사용하는 파라미터 입니다 ex) https://api.junglebook.co.kr/goods/all/7</li>
+	<li>페이징 처리된 경우 페이지번호 파라미터를 이용하여 특정 페이지의 데이터를 조회 합니다. ex) https://api.junglebook.co.kr/goods/all/7</li>
 </ul>
 
 {조건파라미터}
