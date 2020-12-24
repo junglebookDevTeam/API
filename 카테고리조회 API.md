@@ -78,8 +78,7 @@
 
 ## Response (JSON) ##
 
-상품조회 API > Response 참고
-https://github.com/junglebookDevTeam/API/blob/master/%EC%83%81%ED%92%88%EC%A1%B0%ED%9A%8C%20API.md#response-json
+[상품조회 API > Response 참고](https://github.com/junglebookDevTeam/API/blob/master/%EC%83%81%ED%92%88%EC%A1%B0%ED%9A%8C%20API.md#response-json)
 
 ## Code sample ##
 <blockquote>
