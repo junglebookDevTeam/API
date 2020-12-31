@@ -21,7 +21,7 @@
 {조건파라미터}
 <ul>
 	<li><code>updateAfter</code> (optional): 특정일 포함 이후 업데이트 상품 조회 (값 형식: yyyy-mm-dd)<br>ex) https://api.junglebook.co.kr/goods/all?updateAfter=2019-09-01</li>
-	<li><code>query</code> (Conditional Required): 특정 라우트파라미터 사용시 필수 입니다.<br>ex) https://api.junglebook.co.kr/goods/goodsNm/1?query=뉴트리오큐브</li>
+	<li><code>query</code> (Conditional Required): 특정 라우트파라미터(goodsNm) 사용시 필수 파라미터 입니다.<br>ex) https://api.junglebook.co.kr/goods/goodsNm/1?query=뉴트리오큐브</li>
 </ul>
 
 ## Response (JSON) ##
