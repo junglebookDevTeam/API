@@ -10,7 +10,7 @@
 	<li>전체상품 조회시 {라우트파라미터} = "all" ex) https://api.junglebook.co.kr/goods/all/2</li>
 	<li>미진열상품 조회시 {라우트파라미터} = "close" ex) https://api.junglebook.co.kr/goods/close/3</li>
 	<li>상품명 검색시 {라우트파라미터} = "goodsNm" ex) https://api.junglebook.co.kr/goods/goodsNm/1?query=뉴트리오큐브</li>
-	<li>전체 또는 미진열 상품 조회시 페이징 처리가 되며, 한 페이지당 100개의 상품이 조회됩니다.</li>
+	<li>상품 조회시 상품수가 100개 이상인 경우, 페이징 처리가 되며 한 페이지당 100개의 상품이 조회됩니다.</li>
 </ul>
 
 [/{페이지번호}] (optional)
