@@ -35,7 +35,7 @@
   <li><code><strong>data</strong></code>(array): 상품정보</li>
   <ul>
     <li><code><strong>goodsNo</strong></code>(int): 상품번호</li>
-	<li><code><strong>open</strong></code>(int 1): 진열여부 (* open 값이 "0" 인 경우(미진열 상품) 이하 상품정보값은 표시 하지 않습니다.)</li>
+	<li><code><strong>open</strong></code>(int): 진열여부 (* open 값이 "0" 인 경우(미진열 상품) 이하 상품정보값은 표시 하지 않습니다.)</li>
     <li><code><strong>goodsNm</strong></code>(string): 상품명</li>
     <li><code><strong>categoryCode</strong></code>(string): 카테고리코드(SEPERATOR "|")</li>
     <li><code><strong>categoryNm</strong></code>(string): 카테고리명(SEPERATOR "|")</li>
@@ -57,7 +57,7 @@
 	<li><code><strong>goodsRepImage</strong></code>(string): 상품대표 이미지</li>
     <li><code><strong>goodsImage</strong></code>(array): 상품 추가 이미지</li>
     <li><code><strong>goodsStock</strong></code>(int): 상품재고수</li>
-    <li><code><strong>runout</strong></code>(int 1): 품절여부</li>
+    <li><code><strong>runout</strong></code>(int): 품절여부</li>
 	<li><code><strong>barcode</strong></code>(string): 상품 바코드 (바코드 시작 값이 "A" 인 경우 정글북에서 임의 생성한 바코드 입니다. 경우에 따라 상품의 실제 바코드와 다를 수 있습니다.)</li>
     <li><code><strong>EAD</strong></code>(date): 재입고일</li>
     <li><code><strong>inPackageEA</strong></code>(int): 패키지 입수량</li>
