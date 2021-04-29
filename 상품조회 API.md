@@ -65,11 +65,11 @@
 	<ul>
 		<li><code><strong>type</strong></code>(int): 배송비 타입</li>
 		<ul>
-			<li><code><strong>0</strong></code>: 기본 (별도 상품별 배송비 설정 하지 않음 >> 기본 배송정책 따름)</li>
-			<li><code><strong>1</strong></code>: 무료</li>
-			<li><code><strong>3</strong></code>: 착불</li>
-			<li><code><strong>4</strong></code>: 고정 (구매 수량 상관없이 고정 배송비 >> <code><strong>fee</strong></code> 금액 부과)</li>
-			<li><code><strong>5</strong></code>: 수량별 (구매 수량별 배송비 >> 구매수량 X <code><strong>fee</strong></code> 금액 부과)</li>
+			<li>0: 기본 (별도 상품별 배송비 설정 하지 않음 >> 기본 배송정책 따름)</li>
+			<li>1: 무료</li>
+			<li>3: 착불</li>
+			<li>4: 고정 (구매 수량 상관없이 고정 배송비 >> <code><strong>fee</strong></code> 금액 부과)</li>
+			<li>5: 수량별 (구매 수량별 배송비 >> 구매수량 X <code><strong>fee</strong></code> 금액 부과)</li>
 		</ul>
 		<li><code><strong>title</strong></code>(string): 배송비 타이틀</li>
 		<li><code><strong>fee</strong></code>(int): 배송비</li>
