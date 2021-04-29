@@ -74,7 +74,7 @@
 		<li><code><strong>title</strong></code>(string): 배송비 타이틀</li>
 		<li><code><strong>fee</strong></code>(int): 배송비</li>
 	</ul>
-	<li><code><strong>expData</strong></code>(object): 상품 유통기한 데이터</li>
+	<li><code><strong>expData</strong></code>(object): 상품 유통기한</li>
 	<ul>
 		<li><code><strong>active</strong></code>(date): 출고 중인 대표 유통기한</li>
 		<li><code><strong>cActive</strong></code>(date): 선입선출 전제로 계산된 출고 유통기한</li>
