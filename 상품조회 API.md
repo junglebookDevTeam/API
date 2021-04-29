@@ -76,10 +76,10 @@
 	</ul>
 	<li><code><strong>expData</strong></code>(object): 상품 유통기한 데이터</li>
 	<ul>
-		<li><code><strong>active</strong></code>(date): 현재 출고 중인 ACTIVE 유통기한 날짜</li>
-		<li><code><strong>cActive</strong></code>(date): 선입선출 전제로 계산된 ACTIVE 유통기한 날짜</li>
+		<li><code><strong>active</strong></code>(date): 출고 중인 대표 유통기한</li>
+		<li><code><strong>cActive</strong></code>(date): 선입선출 전제로 계산된 출고 유통기한</li>
 		<li><code><strong>period</strong></code>(int): 유통기간 (제조일로 부터 N개월)</li>
-		<li><code><strong>releasable</strong></code>(array): 출고 가능성 있는 유통기한 날짜 리스트</li>
+		<li><code><strong>releasable</strong></code>(array): 출고 중인 유통기한 리스트</li>
 	</ul>
 	<li><code><strong>updateDt</strong></code>(date): 상품 업데이트 날짜</li>
 	<li><code><strong>regDt</strong></code>(date): 상품 등록 날짜</li>
