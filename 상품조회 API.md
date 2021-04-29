@@ -61,17 +61,17 @@
 	<li><code><strong>barcode</strong></code>(string): 상품 바코드 (바코드 시작 값이 "A" 인 경우 정글북에서 임의 생성한 바코드 입니다. 경우에 따라 상품의 실제 바코드와 다를 수 있습니다.)</li>
     <li><code><strong>EAD</strong></code>(date): 재입고일</li>
     <li><code><strong>inPackageEA</strong></code>(int): 패키지 입수량</li>
-	<li><code><strong>delivery</strong></code>(object): 상품 배송비 데이터</li>
+	<li><code><strong>delivery</strong></code>(object): 상품별 배송비</li>
 	<ul>
-		<li><code><strong>type</strong></code>(int): 배송비 설정</li>
+		<li><code><strong>type</strong></code>(int): 배송비 타입</li>
 		<ul>
-			<li><code><strong>0</strong></code>: 기본</li>
-			<li><code><strong>1</strong></code>: 무료 (해당 상품은 별도 배송비 없이 무료 배송)</li>
-			<li><code><strong>3</strong></code>: 착불 (해당 상품 구매시 착불로 배송 됩니다.)</li>
-			<li><code><strong>4</strong></code>: 고정 (구매 수량 상관없이 고정 배송비 부과 합니다.)</li>
-			<li><code><strong>5</strong></code>: 수량별 (구매 수량별 배송비가 계산되어 부과 됩니다.)</li>
+			<li><code><strong>0</strong></code>: 기본 (별도 상품별 배송비 설정 하지 않음 >> 기본 배송정책 따름)</li>
+			<li><code><strong>1</strong></code>: 무료</li>
+			<li><code><strong>3</strong></code>: 착불</li>
+			<li><code><strong>4</strong></code>: 고정 (구매 수량 상관없이 고정 배송비 >> <code><strong>fee</strong></code> 금액 부과)</li>
+			<li><code><strong>5</strong></code>: 수량별 (구매 수량별 배송비 >> 구매수량 X <code><strong>fee</strong></code> 금액 부과)</li>
 		</ul>
-		<li><code><strong>title</strong></code>(string): 배송설정 타이틀</li>
+		<li><code><strong>title</strong></code>(string): 배송비 타이틀</li>
 		<li><code><strong>fee</strong></code>(int): 배송비</li>
 	</ul>
 	<li><code><strong>expData</strong></code>(object): 상품 유통기한 데이터</li>
