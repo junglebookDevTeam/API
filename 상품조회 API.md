@@ -4,7 +4,7 @@
 <p>URL: https://api.junglebook.co.kr/goods/{라우트파라미터}[/{페이지번호}]?{조건파라미터}={값}</p>
 <p><p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p></p>
 
-{라우트파라미터}
+{라우트파라미터}deprecated
 <ul>
 	<li>특정상품 조회시 {라우트파라미터} = "{상품번호}" ex) https://api.junglebook.co.kr/goods/3754</li>
 	<li>전체상품 조회시 {라우트파라미터} = "all" ex) https://api.junglebook.co.kr/goods/all/2</li>
@@ -86,8 +86,9 @@
   </ul>
 </ul>
 
-## 상품Tag 검색 ##
+## 상품Tag 검색 (Deprecated in v4)##
 
+<strike>
 https://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
 
 태그 리스트
@@ -99,6 +100,7 @@ https://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
 	<li><code>오프전용</code>: 오프라인에서만 판매/유통 할 수 있는 상품입니다.</li>
 	<li><code>단가인상</code>: 단가인상 예정인 상품 입니다.</li>
 </ul>
+</strike>
 
 ## Code sample ##
 <blockquote>
@@ -126,6 +128,7 @@ https://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
+	<strike>
 	<code>
 		// Tag검색
 		curl -X GET
@@ -133,4 +136,5 @@ https://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
 		-H 'cache-control: no-cache'
 		-H 'Authorization: {api_key}'
 	</code>
+	</strike>
 </pre>
