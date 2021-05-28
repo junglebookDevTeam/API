@@ -86,7 +86,7 @@
   </ul>
 </ul>
 
-## 상품Tag 검색 (Deprecated in v4)##
+## 상품Tag 검색 (Deprecated in v4)
 
 <strike>
 https://api.junglebook.co.kr/goods/tag[/페이지번호]?q={태그}
