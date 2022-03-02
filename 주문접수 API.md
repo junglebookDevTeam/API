@@ -5,7 +5,7 @@
 <p>테스트 주문 요청URL: https://api.junglebook.co.kr/order/test</p>
 <p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
-## Response parameters ##
+## Request parameters ##
 
 <ul>
 	<li>data: 주문정보 (JSON 형식)</li>
