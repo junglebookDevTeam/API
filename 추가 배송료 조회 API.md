@@ -1,7 +1,7 @@
 # 추가 배송료 조회 API
 
 ## Request (POST) ##
-<p>URL: https://api.junglebook.co.kr/order/extraShippingFare</p>
+<p>URL: https://api.junglebook.co.kr/shipping/extraFare</p>
 <p>Require header: Authorization {api_key} (api_key는 정글북 개발팀에 발급요청 하시기바랍니다. dev@junglebook.co.kr)</p>
 
 ## Request parameters ##
@@ -53,7 +53,7 @@
 <pre>
 	<code>
 curl -X POST \
-  https://api.junglebook.co.kr/order/extraShippingFare \
+  https://api.junglebook.co.kr/shipping/extraFare \
   -H 'cache-control: no-cache' \
   -H 'Authorization: {api_key}' \
   -F '{"zipCode": "06546", "roadAddress": "제주특별자치도 서귀포시 대정읍 대한로 632"}'
